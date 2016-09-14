@@ -1,0 +1,68 @@
+@import "bourbon";
+@import "vars.scss";
+
+*::-webkit-input-placeholder{
+    color: #666;
+    opacity: 1;
+}
+
+*:-moz-placeholder{
+    color: #666;
+    opacity: 1;
+}
+
+*::-moz-placeholder{
+    color: #666;
+    opacity: 1;
+}
+
+*:-ms-input-placeholder{
+    color: #666;
+    opacity: 1;
+}
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid{
+    color: #666;
+}
+
+body input:required:valid,
+body textarea:required:valid{
+    color: #666;
+}
+
+//Custom Styles Here
+.remember{
+  background-image: url("../img/raster/bg-grey.png");
+  height: 285px;
+  padding-top: 30px;
+}
+.remember__item{
+  width: 555px;
+}
+.remember__item__h{
+  border-top: 2px solid #063;
+  border-bottom: 2px solid #063;
+  width: 432px;
+  margin-left: 113px;
+  letter-spacing: 0.7px;
+  padding: 20px 0px;
+  h2{
+    color: #660404;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+//ALWAYS END
+@import "media.scss";
+@import "sketches.scss";

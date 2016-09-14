@@ -1,0 +1,66 @@
+@import "bourbon";
+@import "vars.scss";
+
+body{
+  font-family: Calibri;
+}
+header{
+  background-image: url("../img/raster/bg-h.png");
+  background-repeat: no-repeat;
+  height: 189px;
+  position: relative;
+  padding-bottom: 10px;
+  text-align: center;
+  &:after{
+    content: '';
+    height: 10px;
+    display: block;
+    background-image: url("../img/raster/line-h.png");
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+}
+.get{
+  background-image: url("../img/raster/bg-man.jpg");
+  height: 700px;
+  h3{
+    padding-top: 48px;
+    padding-left: 143px;
+    letter-spacing: 0.8px;
+  }
+}
+.get__item-left{
+  background-color: #ff9500;
+  width: 141px;
+  height: 30px;
+  p{
+    text-align: right;
+    padding-right: 8px;
+  }
+}
+.get__item-right{
+  p{
+    padding-left: 22px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+  }
+}
+.get__item{
+  padding-top: 26px;
+  padding-bottom: 31px;
+}
+.get__item_padding{
+  padding-top: 10px;
+}
+.get__item > div{
+  vertical-align: top;
+}
+.pixel{
+  position: absolute;
+  left: 50%;
+  top: 0;
+  margin-left: -(1280px/2);
+  opacity: 0.4;
+}
