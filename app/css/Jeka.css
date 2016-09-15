@@ -251,7 +251,9 @@ p {
 .slider-bg {
   max-width: 1034px;
   min-height: 498px;
-  background-color: #fff;
-  opacity: 0.37;
+  background-color: rgba(121, 135, 155, 0.44);
   margin: 0 auto;
   margin-top: 79px; }
+
+.slide-face img {
+  float: left; }
