@@ -8,6 +8,9 @@ header {
   position: relative;
   padding-bottom: 10px;
   text-align: center; }
+  header h1 {
+    padding-top: 22px;
+    letter-spacing: 0.2px; }
   header:after {
     content: '';
     height: 10px;

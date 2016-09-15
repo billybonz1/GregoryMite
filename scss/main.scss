@@ -32,13 +32,13 @@ body textarea:required:valid{
 }
 
 //Custom Styles Here
-.remember{
-  background-image: url("../img/raster/bg-grey.png");
-  height: 285px;
-  padding-top: 30px;
-}
 .remember__item{
-  width: 555px;
+  width: 41%;
+  display: inline-block;
+  vertical-align: top;
+}
+.remember__item_padding{
+  margin-top: 30px;
 }
 .remember__item__h{
   border-top: 2px solid #063;
@@ -51,8 +51,68 @@ body textarea:required:valid{
     color: #660404;
   }
 }
+.remember{
+  background-image: url("../img/raster/bg-grey.png");
+  height: 285px;
+  p{
+    color: white;
+    padding-top: 32px;
+    padding-left: 116px;
+    line-height: 26px;
+  }
+}
+.remember__item__content{
+  width: 502px;
+  height: 226px;
+  opacity: 0.65;
+  background-color: #f8941d;
+  margin-left: 221px;
+  margin-top: 30px;
+  padding-top: 10px;
+}
+.remember__item__free{
+  width: 50%;
+  height: 24%;
+  padding-top: 8px;
+  padding-left: 33px;
+  background-color: #00672f;
+  opacity: 1;
+  position: relative;
+  &:after{
+    content: '';
+    position: absolute;
+    right: -46px;
+    bottom: 0px;
+    border: 26px solid transparent;
+    border-left: 20px solid #006726;
+  }
+  h2{
+    color: #ff9500;
+    letter-spacing: 0.4px;
+  }
+}
+.remember__item__btn{
+  background-image: url("../img/raster/btn-red.png");
+  width: 74%;
+  height: 54%;
+  border: none;
+  margin-left: 64px;
+  margin-top: 20px;
+  h2{
+    color: white;
+    font-size: 31px;
+    padding-right: 9px;
+  }
+  span{
+    font-size: 49px;
 
-
+  }
+}
+.belive{
+  background-image: url("../img/raster/bg-girl.png");
+  width: 100%;
+  height: 1432px;
+}
 
 
 

@@ -22,13 +22,13 @@ body input:required:valid,
 body textarea:required:valid {
   color: #666; }
 
-.remember {
-  background-image: url("../img/raster/bg-grey.png");
-  height: 285px;
-  padding-top: 30px; }
-
 .remember__item {
-  width: 555px; }
+  width: 41%;
+  display: inline-block;
+  vertical-align: top; }
+
+.remember__item_padding {
+  margin-top: 30px; }
 
 .remember__item__h {
   border-top: 2px solid #063;
@@ -39,6 +39,62 @@ body textarea:required:valid {
   padding: 20px 0px; }
   .remember__item__h h2 {
     color: #660404; }
+
+.remember {
+  background-image: url("../img/raster/bg-grey.png");
+  height: 285px; }
+  .remember p {
+    color: white;
+    padding-top: 32px;
+    padding-left: 116px;
+    line-height: 26px; }
+
+.remember__item__content {
+  width: 502px;
+  height: 226px;
+  opacity: 0.65;
+  background-color: #f8941d;
+  margin-left: 221px;
+  margin-top: 30px;
+  padding-top: 10px; }
+
+.remember__item__free {
+  width: 50%;
+  height: 24%;
+  padding-top: 8px;
+  padding-left: 33px;
+  background-color: #00672f;
+  opacity: 1;
+  position: relative; }
+  .remember__item__free:after {
+    content: '';
+    position: absolute;
+    right: -46px;
+    bottom: 0px;
+    border: 26px solid transparent;
+    border-left: 20px solid #006726; }
+  .remember__item__free h2 {
+    color: #ff9500;
+    letter-spacing: 0.4px; }
+
+.remember__item__btn {
+  background-image: url("../img/raster/btn-red.png");
+  width: 74%;
+  height: 54%;
+  border: none;
+  margin-left: 64px;
+  margin-top: 20px; }
+  .remember__item__btn h2 {
+    color: white;
+    font-size: 31px;
+    padding-right: 9px; }
+  .remember__item__btn span {
+    font-size: 49px; }
+
+.belive {
+  background-image: url("../img/raster/bg-girl.png");
+  width: 100%;
+  height: 1432px; }
 
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */
@@ -54,7 +110,8 @@ h1 {
   font-size: 32px;
   font-weight: 700;
   line-height: 46px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  margin: 0; }
 
 h2 {
   color: #00612b;
