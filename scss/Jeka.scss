@@ -1,0 +1,189 @@
+@import "main.scss";
+@import "../libs/lightslider/dist/css/lightslider.min.css";
+///-Верх с формой///
+
+.head-grab{
+  background-image: url("../img/bg-grab-top.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+.top-grab{
+  p{
+    color: #007236;
+    font-size: 19px;
+    line-height: 24px;
+    text-transform: uppercase;
+    padding: 35px 0px 0 0px;
+    margin-left: 160px;
+  }
+  img{
+    margin-top: 8px;
+    margin-bottom: 9px;
+  }
+}
+.head-grab-green{
+  background-image: url("../img/bg-grab-green.jpg");
+  background-position: center center;
+  background-size: cover;
+  min-height: 193px;
+  h1{
+    font-size: 29px;
+    text-align: center;
+    line-height: 45px;
+    text-shadow: 3px 1px 1px black;
+    padding: 0 140px 0 140px;
+  }
+}
+.head-grab-form{
+  background-image: url("../img/bg-grab-form.jpg");
+  background-position: center center;
+  background-size: cover;
+  *[class^=col]{
+    padding: 0;
+    margin: 0;
+  }
+}
+.form-text{
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.form-zag{
+  color: #007236;
+  font-family: Calibri;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 35px;
+  text-transform: uppercase;
+  margin: 108px 0 0 159px;
+}
+.form-item{
+  margin-top: 35px;
+  p{
+    font-size: 24px;
+    display: inline-block;
+    max-width: 480px;
+    vertical-align: top;
+    padding-left: 25px;
+
+  }
+}
+.orange-item{
+  min-width: 175px;
+  min-height: 30px;
+  text-align: right;
+  font-family: "Myriad Pro";
+  color: #007236;
+  font-size: 24px;
+  padding-right: 7px;
+  font-weight: 400;
+  background-color: #ff9500;
+  display: inline-block;
+  vertical-align: top;
+}
+.form-shield{
+  width: 433px;
+  height: 484px;
+  background-image: url("../img/forma.png");
+  margin-top: 50px;
+}
+.form-h2{
+  text-align: center;
+  color: #8e0001;
+  font-family: Calibri;
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 24px;
+  padding: 22px 60px 0 60px;
+}
+.input-form{
+  text-align: center;
+  margin-top: 23px;
+  input[type=text]{
+    color: #9a9a9a;
+    font-family: Calibri;
+    font-size: 21px;
+    font-weight: 400;
+    display: inline-block;
+    min-width: 303px;
+    margin-bottom: 17px;
+    padding-left: 11px;
+    border-bottom: 3px solid #e6d594;
+    border-top: 3px solid #cdb169;
+    border-left: 3px solid #cbae67;
+    border-right: 3px solid #e0d09f;
+    border-radius: 4px ;
+  }
+  p{
+    color: #8e0001;
+    font-size: 12px;
+    text-align: left;
+    display: inline-block;
+    padding-left: 11px;
+    vertical-align: middle;
+  }
+  .checkbox-p{
+    display: block;
+    input[type=checkbox]{
+      display: none;
+    }
+
+    div{
+      display: inline-block;
+      border-bottom: 3px solid #e6d594;
+      border-top: 3px solid #cdb169;
+      border-left: 3px solid #cbae67;
+      border-right: 3px solid #e0d09f;
+      border-radius: 4px;
+      width: 20px;
+      height: 20px;
+      background: #fff;
+      vertical-align: middle;
+      margin-left: -29px;
+    }
+    input[type=checkbox]:checked + div{
+      background: red;
+    }
+  }
+
+}
+.checkbox-p{
+  margin: auto;
+}
+.button-red{
+  width: 362px;
+  height: 60px;
+  background-image: url("../img/button.png");
+  margin-left: 33px;
+  margin-top:10px;
+  cursor: pointer;
+  //text/
+  color: #fcfafa;
+  font-family: Calibri;
+  font-size: 37px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.grab-head-green.grab-head-green-height h1{
+  line-height: 165px;
+}
+//slider//
+
+.slider-grab{
+  min-height: 710px;
+  background-image: url("../img/bg-slide.jpg");
+  position: relative;
+}
+.slider-bg{
+  max-width: 1034px;
+  min-height: 498px;
+  background-color: rgba(121, 135, 155, 0.44);
+  margin: 0 auto;
+  margin-top: 79px;
+
+}
+.slide-face{
+  img{
+    float: left;
+  }
+}

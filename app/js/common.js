@@ -1,5 +1,10 @@
 $(function() {
-
+	$("#lightSlider").lightSlider({
+		adaptiveHeight:true,
+		item:1,
+		slideMargin:0,
+		loop:true
+	});
 	//Chrome Smooth Scroll
 	try {
 		$.browserSelector();
