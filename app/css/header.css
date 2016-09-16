@@ -1,14 +1,17 @@
 body {
   font-family: Calibri; }
 
-header {
+.header-flag {
   background-image: url("../img/raster/bg-h.png");
   background-repeat: no-repeat;
   height: 189px;
   position: relative;
   padding-bottom: 10px;
   text-align: center; }
-  header:after {
+  .header-flag h1 {
+    padding-top: 22px;
+    letter-spacing: 0.2px; }
+  .header-flag:after {
     content: '';
     height: 10px;
     display: block;
