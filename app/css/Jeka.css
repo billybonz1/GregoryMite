@@ -372,7 +372,7 @@ body textarea:required:valid {
 
 .steps {
   background: url(../img/raster/bg-steps.jpg);
-  min-height: 1000px; }
+  min-height: 3637px; }
 
 .steps__header h2 {
   top: -32px; }
@@ -381,7 +381,7 @@ body textarea:required:valid {
   top: -58px; }
 
 .step {
-  min-height: 402px;
+  min-height: 359px;
   position: relative;
   padding: 0 145px; }
 
@@ -391,6 +391,7 @@ body textarea:required:valid {
   background: url("../img/raster/step-counter.png");
   position: absolute;
   bottom: 0;
+  top: 260px;
   left: 50%;
   margin-left: -89px;
   color: #f8941d;
@@ -413,8 +414,12 @@ body textarea:required:valid {
   text-indent: -9px;
   margin-left: -19px; }
 
+.step__text_left {
+  padding-top: 110px; }
+
 .step__text_right {
-  text-align: right; }
+  text-align: right;
+  padding-top: 110px; }
   .step__text_right .step__text__header {
     float: right;
     margin-left: 0;
@@ -424,8 +429,8 @@ body textarea:required:valid {
       clear: both;
       content: ""; }
 
-.step__text {
-  padding-top: 47px; }
+.step__text p {
+  text-transform: uppercase; }
 
 /* ============================ form css =========================== */
 .inner {
