@@ -9,8 +9,12 @@ body {
   padding-bottom: 10px;
   text-align: center; }
   .header-flag h1 {
-    padding-top: 22px;
-    letter-spacing: 0.2px; }
+    padding-top: 30px;
+    letter-spacing: 1px;
+    -webkit-transform: scale(1, 1.3);
+    -ms-transform: scale(1, 1.3);
+    transform: scale(1, 1.3);
+    line-height: 37px; }
   .header-flag:after {
     content: '';
     height: 10px;
