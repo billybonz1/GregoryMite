@@ -4,9 +4,15 @@
     font-size: 1.4vw; }
   .head-grab-green h1 {
     font-size: 2.4vw; }
+  .form-zag {
+    margin-left: 70px; }
   .form-shield {
-    margin: 0 auto;
-    margin-bottom: 15px; }
+    margin: 43px auto;
+    margin-bottom: 15px;
+    background-size: 100%;
+    background-repeat: no-repeat; }
+  .orange-item {
+    min-width: 96px; }
   .grab-head-green.grab-head-green-height h1 {
     font-size: 2.4vw; }
   .slider-bg ul.lightSlider li .slide-face {
@@ -27,7 +33,9 @@
     font-size: 1.5vw;
     margin-left: 20px; }
   .top-grab img {
-    margin-left: 100px; } }
+    margin-left: 100px; }
+  .orange-item {
+    min-width: 170px; } }
 
 @media only screen and (max-width: 816px) {
   .head-grab {
@@ -45,4 +53,13 @@
     .form-logo img {
       margin: 0 auto;
       display: block;
-      padding-top: 20px; } }
+      padding-top: 20px; }
+  .form-orange-text {
+    display: block; }
+  .form-green-text {
+    display: block; }
+  .form-zag {
+    font-size: 3.5vw;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 70px; } }
