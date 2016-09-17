@@ -1,10 +1,13 @@
 $(function() {
-	$("#lightSlider").lightSlider({
-		adaptiveHeight:true,
-		item:1,
-		slideMargin:0,
-		loop:true
-	});
+	if($(window).width() > 816){
+		$("#lightSlider").lightSlider({
+			adaptiveHeight:true,
+			item:1,
+			slideMargin:0,
+			loop:true
+		});
+	}
+
 	//Chrome Smooth Scroll
 	try {
 		$.browserSelector();
@@ -17,8 +20,6 @@ $(function() {
 
 	$("img, a").on("dragstart", function(event) { event.preventDefault(); });
 
-	// fancybox
-	$("a.modal").fancybox();
 });
 
 //Форма отправки 2.0

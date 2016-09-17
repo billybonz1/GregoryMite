@@ -6,6 +6,7 @@
   background-position: center center;
   background-size: cover;
 }
+
 .top-grab{
   p{
     color: #007236;
@@ -74,7 +75,7 @@
   p{
     text-align: center;
     font-size: 3.3vw;
-    padding: 10px 100px;
+    padding: 10px 50px;
     -webkit-transform: scale(1, 1.2);
     -ms-transform: scale(1, 1.2);
     transform: scale(1, 1.2);
@@ -84,6 +85,13 @@
 .form-text{
   margin-top: 40px;
   margin-bottom: 80px;
+}
+.form-belive{
+  display: none;
+  img{
+    display: block;
+    margin: 0 auto;
+  }
 }
 .form-zag{
   color: #007236;
@@ -134,15 +142,16 @@
 }
 .form-shield{
   width: 433px;
-  height: 484px;
+  min-height: 484px;
   background-image: url("../img/forma.png");
   margin-top: 43px;
   margin-left: -40px;
   background-size: 100%;
+  background-repeat: no-repeat;
 }
 .form-h2{
   text-align: center;
-  color: #8e0001;
+  color: #790102;
   font-family: Calibri;
   font-size: 23px;
   font-weight: 700;
@@ -237,6 +246,8 @@
   min-height: 710px;
   background-image: url("../img/bg-slide.jpg");
   position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .slider-bg{
   min-height: 498px;
@@ -261,12 +272,13 @@
     float: left;
     padding: 33px 0px 0px 42px;
     margin-right: 74px;
+    margin-bottom: 50px;
   }
   p {
     color: black;
     font-size: 18px;
     line-height: 30px;
-    padding: 29px 36px 0 0px;
+    padding: 29px 36px 0 36px;
     text-align: justify;
   }
 
@@ -299,5 +311,8 @@
     padding-top: 15px;
     letter-spacing: 0.2px;
   }
+}
+.grab-footer-logo .visible-footer1{
+  display: none;
 }
 @import "JekaMedia";
