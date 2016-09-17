@@ -1,0 +1,105 @@
+//media for grab baby!!/
+/* medium Devices, Wide Screens */
+@media only screen and (max-width : 1212px) {
+  .top-grab {
+    p{
+      font-size: 1.4vw;
+    }
+  }
+  .head-grab-green {
+    h1{
+      font-size: 2.4vw;
+    }
+  }
+  .form-zag{
+    margin-left: 70px;
+  }
+  .form-shield{
+    margin: 43px auto;
+    margin-bottom: 15px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  .orange-item{
+    min-width: 96px;
+  }
+  .grab-head-green.grab-head-green-height{
+    h1{
+      font-size: 2.4vw;
+    }
+  }
+  .slider-bg ul.lightSlider li .slide-face{
+    width: 100%;
+  }
+  .lSAction>.lSPrev{
+    left: 20px;
+  }
+  .lSAction>.lSNext{
+    right: 20px;
+  }
+  .slide-face {
+    img{
+      width: 40%;
+    }
+    p{
+      font-size: 1.5vw;
+    }
+  }
+  .grab-footer-logo {
+    p{
+      font-size: 2.8vw;
+    }
+  }
+}
+@media only screen and (max-width : 992px){
+  .top-grab{
+    p{
+      font-size: 1.5vw;
+      margin-left: 20px;
+    }
+    img{
+      margin-left: 100px;
+    }
+  }
+  .orange-item{
+    min-width: 170px;
+  }
+}
+@media only screen and (max-width : 816px){
+  .head-grab{
+    visibility: hidden;
+    display: none;
+  }
+  .head-grab-green {
+    h1{
+      font-size: 3.5vw;
+      padding: 50px 100px;
+      line-height: 30px;
+      -webkit-transform: scale(1, 1.3);
+      -ms-transform: scale(1, 1.3);
+      transform: scale(1, 1.3);
+    }
+  }
+  .form-logo{
+    display: block;
+    img{
+      margin: 0 auto;
+      display: block;
+      padding-top: 20px;
+    }
+
+  }
+  .form-orange-text{
+    display: block;
+  }
+  .form-green-text{
+    display: block;
+  }
+  .form-zag{
+    font-size: 3.5vw;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 70px;
+  }
+
+}
