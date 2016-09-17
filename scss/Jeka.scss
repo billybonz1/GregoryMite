@@ -13,12 +13,13 @@
     font-size: 19px;
     line-height: 24px;
     text-transform: uppercase;
-    padding: 35px 0px 0 0px;
-    margin-left: 160px;
+    padding: 34px 0px 0 0px;
+    margin-left: 146px;
   }
   img{
     margin-top: 8px;
     margin-bottom: 9px;
+    margin-left: 11px;
   }
 }
 .head-grab-green{
@@ -27,11 +28,11 @@
   background-size: cover;
   min-height: 193px;
   h1{
-    font-size: 29px;
+    font-size: 36px;
     text-align: center;
-    line-height: 45px;
+    line-height: 51px;
     text-shadow: 3px 1px 1px black;
-    padding: 0 140px 0 140px;
+    padding: 12px 30px 0 30px;
   }
 }
 .head-grab-form{
@@ -43,9 +44,29 @@
     margin: 0;
   }
 }
+.form-logo{
+  display: none;
+}
+.form-orange-text{
+  max-width: 650px;
+  background-color: #f8941d;
+  min-height: 200px ;
+  margin: 0 auto;
+  margin-top: 15px;
+  &::after{
+    content: "";
+    position: absolute;
+    bottom: 12%;
+    left: 26%;
+    background-image: url(../img/arrow-down.png);
+    width: 100%;
+    background-repeat: no-repeat;
+    height: 50%;
+  }
+}
 .form-text{
   margin-top: 40px;
-  margin-bottom: 40px;
+  margin-bottom: 80px;
 }
 .form-zag{
   color: #007236;
@@ -54,7 +75,8 @@
   font-weight: 700;
   line-height: 35px;
   text-transform: uppercase;
-  margin: 108px 0 0 159px;
+  margin: 98px 0 0 159px;
+  letter-spacing: 0.9px;
 }
 .form-item{
   margin-top: 35px;
@@ -63,9 +85,21 @@
     display: inline-block;
     max-width: 480px;
     vertical-align: top;
-    padding-left: 25px;
+    padding-left: 21px;
+    padding-top: 2px;
+    line-height: 24px;
+    letter-spacing: 0px;
 
   }
+}
+.form-item_margin{
+  margin-top: 46px;
+}
+.form-item_margin1{
+  margin-top: 45px;
+}
+.form-item_margin2{
+  margin-top: 47px;
 }
 .orange-item{
   min-width: 175px;
@@ -74,17 +108,19 @@
   font-family: "Myriad Pro";
   color: #007236;
   font-size: 24px;
-  padding-right: 7px;
+  padding-right: 3px;
   font-weight: 400;
   background-color: #ff9500;
   display: inline-block;
   vertical-align: top;
+  margin-top: -5px;
 }
 .form-shield{
   width: 433px;
   height: 484px;
   background-image: url("../img/forma.png");
-  margin-top: 50px;
+  margin-top: 43px;
+  margin-left: -40px;
 }
 .form-h2{
   text-align: center;
@@ -93,7 +129,7 @@
   font-size: 23px;
   font-weight: 700;
   line-height: 24px;
-  padding: 22px 60px 0 60px;
+  padding: 21px 60px 0 60px;
 }
 .input-form{
   text-align: center;
@@ -105,8 +141,9 @@
     font-weight: 400;
     display: inline-block;
     min-width: 303px;
-    margin-bottom: 17px;
-    padding-left: 11px;
+    margin-bottom: 15px;
+    padding-left: 7px;
+    padding-top: 5px;
     border-bottom: 3px solid #e6d594;
     border-top: 3px solid #cdb169;
     border-left: 3px solid #cbae67;
@@ -115,11 +152,13 @@
   }
   p{
     color: #8e0001;
-    font-size: 12px;
+    font-size: 18px;
     text-align: left;
     display: inline-block;
-    padding-left: 11px;
+    padding-left: 0px;
     vertical-align: middle;
+    font-weight: normal;
+    letter-spacing: -1.6px;
   }
   .checkbox-p{
     display: block;
@@ -134,11 +173,12 @@
       border-left: 3px solid #cbae67;
       border-right: 3px solid #e0d09f;
       border-radius: 4px;
-      width: 20px;
-      height: 20px;
+      width: 25px;
+      height: 25px;
       background: #fff;
       vertical-align: middle;
-      margin-left: -29px;
+      margin-left: 10px;
+      cursor: pointer;
     }
     input[type=checkbox]:checked + div{
       background: red;
@@ -152,20 +192,26 @@
 .button-red{
   width: 362px;
   height: 60px;
-  background-image: url("../img/button.png");
+  background-image: url(../img/button.png);
   margin-left: 33px;
-  margin-top:10px;
+  margin-top: 13px;
   cursor: pointer;
-  //text/
   color: #fcfafa;
   font-family: Calibri;
-  font-size: 37px;
+  font-size: 38px;
   font-weight: 700;
   text-transform: uppercase;
+  letter-spacing: 0.1px;
+  outline: 0;
+  border: none;
+  display: block;
+  box-shadow: 25px 8px 4px -6px rgba(113, 119, 130, 0.81);
 }
 
 .grab-head-green.grab-head-green-height h1{
-  line-height: 165px;
+  line-height: 185px;
+  padding: 0px 90px 0px 90px;
+  letter-spacing: -0.7px;
 }
 //slider//
 
@@ -175,15 +221,65 @@
   position: relative;
 }
 .slider-bg{
-  max-width: 1034px;
   min-height: 498px;
-  background-color: rgba(121, 135, 155, 0.44);
   margin: 0 auto;
   margin-top: 79px;
-
-}
-.slide-face{
-  img{
-    float: left;
+  position: relative;
+  ul.lightSlider{
+    li {
+      padding: 0 40px;
+      .slide-face{
+        background-color: rgba(121, 135, 155, 0.44);
+        margin: 0 20px;
+        padding-bottom: 39px;
+        width: 1034px;
+        margin: auto;
+      }
+    }
   }
 }
+.slide-face {
+  img {
+    float: left;
+    padding: 33px 0px 0px 42px;
+    margin-right: 74px;
+  }
+  p {
+    color: black;
+    font-size: 18px;
+    line-height: 30px;
+    padding: 29px 36px 0 0px;
+    text-align: justify;
+  }
+
+  h3 {
+    color: black;
+    font-size: 18px;
+    padding: 32px 56px 0px 0px;
+    text-align: right;
+
+  }
+}
+.footer-grab{
+  min-height: 195px;
+  background-image: url("../img/bg-green-footer.jpg");
+}
+.grab-footer-logo{
+  img{
+    margin: auto;
+    display: block;
+    padding-top: 22px;
+  }
+  p{
+    text-align: center;
+    color: white;
+    font-family: Calibri;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 31px;
+    text-transform: uppercase;
+    padding-top: 15px;
+    letter-spacing: 0.2px;
+  }
+}
+@import "JekaMedia.scss";
