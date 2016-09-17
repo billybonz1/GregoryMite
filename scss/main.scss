@@ -1,5 +1,5 @@
 @import "bourbon";
-@import "vars.scss";
+@import "vars";
 
 *::-webkit-input-placeholder{
     color: #666;
@@ -412,10 +412,8 @@ body textarea:required:valid{
 
 .steps{
   background: url(../img/raster/bg-steps.jpg);
-  min-height: 1000px;
+  min-height: 3637px;
 }
-
-
 .steps__header{
   h2{
     top: -32px;
@@ -424,19 +422,18 @@ body textarea:required:valid{
     top: -58px;
   }
 }
-
 .step{
-  min-height: 402px;
+  min-height: 359px;
   position: relative;
   padding: 0 145px;
 }
-
 .step__counter{
   width: 178px;
   height: 188px;
   background: url("../img/raster/step-counter.png");
   position: absolute;
   bottom: 0;
+  top: 260px;
   left: 50%;
   margin-left: -(178px/2);
   color: #f8941d;
@@ -448,8 +445,6 @@ body textarea:required:valid{
     display: none;
   }
 }
-
-
 .step__text__header{
   background: url(../img/raster/mazok.png);
   width: 101px;
@@ -462,8 +457,12 @@ body textarea:required:valid{
   text-indent: -9px;
   margin-left: -19px;
 }
+.step__text_left{
+  padding-top: 110px;
+}
 .step__text_right{
   text-align: right;
+  padding-top: 110px;
   .step__text__header{
     float: right;
     margin-left: 0;
@@ -476,10 +475,13 @@ body textarea:required:valid{
   }
 }
 .step__text{
-  padding-top: 47px;
+  p{
+    text-transform: uppercase;
+  }
 }
 
 //ALWAYS END
 
-@import "sketches.scss";
-@import "media.scss";
+@import "sketches";
+@import "media";
+@import "Jeka";
