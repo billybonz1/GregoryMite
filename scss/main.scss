@@ -1,5 +1,5 @@
 @import "bourbon";
-@import "vars.scss";
+@import "vars";
 
 *::-webkit-input-placeholder{
     color: #666;
@@ -482,5 +482,6 @@ body textarea:required:valid{
 
 //ALWAYS END
 
-@import "sketches.scss";
-@import "media.scss";
+@import "sketches";
+@import "media";
+@import "Jeka";
