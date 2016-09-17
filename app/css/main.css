@@ -25,16 +25,21 @@ body textarea:required:valid {
 .remember__item {
   width: 41%;
   display: inline-block;
-  vertical-align: top; }
+  vertical-align: top;
+  margin-top: 30px; }
 
 .remember__item_padding {
-  margin-top: 30px; }
+  float: left;
+  margin-left: 114px; }
+
+.remember__item_float {
+  float: right;
+  margin-right: 7px; }
 
 .remember__item__h {
   border-top: 2px solid #063;
   border-bottom: 2px solid #063;
-  width: 432px;
-  margin-left: 113px;
+  width: 82%;
   letter-spacing: 0.7px;
   padding: 20px 0px; }
   .remember__item__h h2 {
@@ -46,15 +51,12 @@ body textarea:required:valid {
   .remember p {
     color: white;
     padding-top: 32px;
-    padding-left: 116px;
     line-height: 26px; }
 
 .remember__item__content {
-  width: 502px;
+  width: 95.5%;
   height: 226px;
   background-color: rgba(248, 148, 29, 0.65);
-  margin-left: 221px;
-  margin-top: 30px;
   padding-top: 10px; }
 
 .remember__item__free {
@@ -135,7 +137,7 @@ body textarea:required:valid {
 .personal {
   background-image: url("../img/raster/bg-blue.png");
   width: 100%;
-  height: 884px;
+  padding-bottom: 76px;
   position: relative; }
 
 .personal__header h2 {
@@ -150,13 +152,15 @@ body textarea:required:valid {
 .personal__content-right {
   vertical-align: top;
   padding-top: 51px;
-  padding-left: 42px; }
+  padding-left: 42px;
+  display: inline-block; }
   .personal__content-right p {
     color: #2e3192; }
 
 .personal__content-left {
   padding-left: 103px;
-  padding-top: 85px; }
+  padding-top: 85px;
+  display: inline-block; }
 
 .think-header {
   padding-top: 67px; }
@@ -222,7 +226,7 @@ body textarea:required:valid {
 .understand-header {
   background-image: url("../img/raster/bg-flag2.png");
   width: 100%;
-  height: 247px;
+  padding-bottom: 20px;
   text-align: center;
   padding-top: 20px;
   position: relative; }
@@ -232,7 +236,8 @@ body textarea:required:valid {
     border: 149px solid transparent;
     border-top: 38px solid #ff9500;
     bottom: -187px;
-    right: 487px; }
+    left: 50%;
+    margin-left: -145px; }
 
 .header__border-overall {
   border: 2px solid #00622c;
@@ -278,7 +283,8 @@ body textarea:required:valid {
     border: 149px solid transparent;
     border-top: 38px solid #ff9500;
     bottom: -187px;
-    right: 487px; }
+    left: 50%;
+    margin-left: -145px; }
 
 .cost-header__border {
   padding: 37px 0px;
@@ -289,26 +295,137 @@ body textarea:required:valid {
 .cost__content {
   background-image: url("../img/raster/bg-money.png");
   width: 100%;
-  height: 2205px;
   text-align: center;
-  padding-top: 129px; }
+  padding-top: 129px;
+  padding-bottom: 103px; }
 
-.cost__content__item {
-  width: 1004px;
-  height: 137px;
+.block-opacity-overall {
   background-color: rgba(130, 130, 130, 0.18);
   border: 1px solid #fcf9f9;
   -webkit-box-shadow: inset 0 0 51px rgba(0, 0, 0, 0.18);
-  box-shadow: inset 0 0 51px rgba(0, 0, 0, 0.18);
-  margin-left: 141px;
+  box-shadow: inset 0 0 51px rgba(0, 0, 0, 0.18); }
+
+.cost__content__item {
+  width: 78.5%;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 10px;
+  padding-bottom: 14px;
+  margin-bottom: 70px;
   line-height: 37px;
   letter-spacing: 0.6px; }
 
-/* Large Devices, Wide Screens */
-/* Medium Devices, Desktops */
-/* Small Devices, Tablets */
-/* Extra Small Devices, Phones */
+.cost__content__block {
+  text-align: center; }
+  .cost__content__block h3 {
+    letter-spacing: 1px; }
+
+.cost__content__block_img1 {
+  margin: 70px auto;
+  display: block; }
+
+.cost__content__block_img2 {
+  margin: 0 auto;
+  display: block; }
+
+.cost__content__block__item {
+  width: 69.2%;
+  height: 156px;
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.cost__content__block__h3 h3 {
+  padding-top: 6px;
+  line-height: 33px; }
+
+.calculator-header {
+  background-image: url("../img/raster/bg-flag4.png");
+  width: 100%;
+  padding-bottom: 18px;
+  text-align: center;
+  padding-top: 28px;
+  position: relative; }
+  .calculator-header:after {
+    content: '';
+    position: absolute;
+    border: 149px solid transparent;
+    border-top: 38px solid #ff9500;
+    bottom: -187px;
+    left: 50%;
+    margin-left: -145px; }
+
+.calculator-header__border {
+  margin: 0px 71px; }
+  .calculator-header__border h3 {
+    text-shadow: 0px 0px 1px black; }
+
+.calculator__content {
+  background-image: url("../img/raster/bg-calculator.png");
+  width: 100%;
+  height: 1480px;
+  padding-top: 130px; }
+
+.calculator__content__item {
+  height: 566px; }
+
+.steps {
+  background: url(../img/raster/bg-steps.jpg);
+  min-height: 1000px; }
+
+.steps__header h2 {
+  top: -32px; }
+
+.steps__header:after {
+  top: -58px; }
+
+.step {
+  min-height: 402px;
+  position: relative;
+  padding: 0 145px; }
+
+.step__counter {
+  width: 178px;
+  height: 188px;
+  background: url("../img/raster/step-counter.png");
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -89px;
+  color: #f8941d;
+  font-weight: bold;
+  font-size: 130.3px;
+  text-align: center;
+  line-height: 161px; }
+  .step__counter span {
+    display: none; }
+
+.step__text__header {
+  background: url(../img/raster/mazok.png);
+  width: 101px;
+  height: 36px;
+  color: #00622c;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  line-height: 38px;
+  text-indent: -9px;
+  margin-left: -19px; }
+
+.step__text_right {
+  text-align: right; }
+  .step__text_right .step__text__header {
+    float: right;
+    margin-left: 0;
+    margin-right: -16px;
+    text-indent: 10px; }
+    .step__text_right .step__text__header:after {
+      clear: both;
+      content: ""; }
+
+.step__text {
+  padding-top: 47px; }
+
 /* ============================ form css =========================== */
 .inner {
   max-width: 1280px;
@@ -327,7 +444,7 @@ h2 {
   color: #00612b;
   font-size: 40px;
   font-weight: 700;
-  text-shadow: 0px 0px 5px black; }
+  text-shadow: 0px 0px 2px black; }
 
 .h2-thin {
   font-size: 35px;
@@ -357,4 +474,49 @@ p {
 .inline-block {
   display: inline-block; }
 
+.uppercase {
+  text-transform: uppercase; }
+
 /* ============================ form css media =========================== */
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+  .remember__item__free h2 {
+    letter-spacing: 0px;
+    font-size: 28px; }
+  .personal__content-left {
+    display: block;
+    padding: 75px 0px; }
+  .personal__content-right {
+    padding: 0; }
+  .personal__content {
+    text-align: center; }
+  p {
+    font-size: 15px; }
+  .think__content-overall {
+    margin: 0 auto; } }
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 1100px) {
+  .header-overall h2 {
+    font-size: 33px; } }
+
+@media only screen and (max-width: 992px) {
+  .header-flag h1 {
+    font-size: 29px; }
+  .remember__item__free {
+    padding-left: 14px; }
+  .remember__item__btn {
+    margin-left: 45px; }
+  .remember__item__h h2 {
+    font-size: 33px; }
+  .belive__content_right {
+    padding-right: 35px; }
+  .belive__content_left {
+    padding-left: 35px; }
+  .remember__item_padding {
+    margin-left: 30px; }
+  h2 {
+    font-size: 36px; } }
+
+/* Small Devices, Tablets */
+/* Extra Small Devices, Phones */
