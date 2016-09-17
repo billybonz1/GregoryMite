@@ -594,7 +594,7 @@ p {
   .form-green-text p {
     text-align: center;
     font-size: 3.3vw;
-    padding: 10px 100px;
+    padding: 10px 50px;
     -webkit-transform: scale(1, 1.2);
     -ms-transform: scale(1, 1.2);
     transform: scale(1, 1.2);
@@ -603,6 +603,12 @@ p {
 .form-text {
   margin-top: 40px;
   margin-bottom: 80px; }
+
+.form-belive {
+  display: none; }
+  .form-belive img {
+    display: block;
+    margin: 0 auto; }
 
 .form-zag {
   color: #007236;
@@ -651,15 +657,16 @@ p {
 
 .form-shield {
   width: 433px;
-  height: 484px;
+  min-height: 484px;
   background-image: url("../img/forma.png");
   margin-top: 43px;
   margin-left: -40px;
-  background-size: 100%; }
+  background-size: 100%;
+  background-repeat: no-repeat; }
 
 .form-h2 {
   text-align: center;
-  color: #8e0001;
+  color: #790102;
   font-family: Calibri;
   font-size: 23px;
   font-weight: 700;
@@ -745,7 +752,9 @@ p {
 .slider-grab {
   min-height: 710px;
   background-image: url("../img/bg-slide.jpg");
-  position: relative; }
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 .slider-bg {
   min-height: 498px;
@@ -764,13 +773,14 @@ p {
 .slide-face img {
   float: left;
   padding: 33px 0px 0px 42px;
-  margin-right: 74px; }
+  margin-right: 74px;
+  margin-bottom: 50px; }
 
 .slide-face p {
   color: black;
   font-size: 18px;
   line-height: 30px;
-  padding: 29px 36px 0 0px;
+  padding: 29px 36px 0 36px;
   text-align: justify; }
 
 .slide-face h3 {
@@ -799,6 +809,9 @@ p {
   padding-top: 15px;
   letter-spacing: 0.2px; }
 
+.grab-footer-logo .visible-footer1 {
+  display: none; }
+
 /* medium Devices, Wide Screens */
 @media only screen and (max-width: 1212px) {
   .top-grab p {
@@ -810,12 +823,15 @@ p {
   .form-shield {
     margin: 43px auto;
     margin-bottom: 15px;
-    background-size: 100%;
     background-repeat: no-repeat; }
   .orange-item {
     min-width: 96px; }
   .grab-head-green.grab-head-green-height h1 {
-    font-size: 2.4vw; }
+    font-size: 2.4vw;
+    -webkit-transform: scale(1, 1.6);
+    -ms-transform: scale(1, 1.6);
+    transform: scale(1, 1.6);
+    padding: 0; }
   .slider-bg ul.lightSlider li .slide-face {
     width: 100%; }
   .lSAction > .lSPrev {
@@ -825,7 +841,7 @@ p {
   .slide-face img {
     width: 40%; }
   .slide-face p {
-    font-size: 1.5vw; }
+    font-size: 2vw; }
   .grab-footer-logo p {
     font-size: 2.8vw; } }
 
@@ -837,6 +853,10 @@ p {
     margin-left: 100px; }
   .orange-item {
     min-width: 170px; } }
+
+@media only screen and (max-width: 991px) {
+  .form-shield {
+    width: 433px; } }
 
 @media only screen and (max-width: 816px) {
   .head-grab {
@@ -858,9 +878,236 @@ p {
   .form-orange-text {
     display: block; }
   .form-green-text {
-    display: block; }
+    display: block;
+    margin: 0 20px; }
   .form-zag {
     font-size: 3.5vw;
     text-align: center;
     margin: 0 auto;
-    margin-top: 70px; } }
+    margin-top: 70px; }
+  .orange-item {
+    display: none; }
+  .form-belive {
+    display: block; }
+  .form-item p {
+    display: block;
+    text-align: center;
+    max-width: 100%; }
+    .form-item p br {
+      display: none; } }
+
+@media only screen and (max-width: 670px) {
+  .form-orange-text {
+    margin: 0 40px;
+    margin-top: 15px; }
+    .form-orange-text p {
+      padding: 30px 10px;
+      line-height: 24px;
+      font-size: 5.4vw; } }
+
+@media only screen and (max-width: 589px) {
+  .head-grab-green h1 {
+    padding: 50px 80px;
+    line-height: 20px; }
+  .slide-face img {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 10px; }
+  .slide-face p {
+    font-size: 3.2vw;
+    display: inline-block;
+    text-align: justify;
+    padding: 0;
+    line-height: 15px; }
+  .slide-face h3 {
+    padding: 0;
+    font-size: 14px; }
+  .grab-head-green.grab-head-green-height h1 {
+    line-height: 30px;
+    font-size: 6vw;
+    padding: 70px 10px;
+    letter-spacing: 0; } }
+
+@media only screen and (max-width: 500px) {
+  .slide-face img {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 10px; }
+  .slide-face p {
+    font-size: 3.2vw;
+    display: inline-block;
+    text-align: justify;
+    padding: 0;
+    line-height: 15px; }
+  .slide-face h3 {
+    padding: 0;
+    font-size: 14px; } }
+
+@media only screen and (max-width: 487px) {
+  .head-grab-green h1 {
+    padding: 50px 50px;
+    line-height: 19px; }
+  .form-orange-text::after {
+    content: '';
+    position: absolute;
+    border: 120px solid transparent;
+    border-top: 20px solid #ff9500;
+    bottom: -140px;
+    left: 60%;
+    margin-left: -145px; } }
+
+@media only screen and (max-width: 435px) {
+  .head-grab-green h1 {
+    font-size: 3.8vw;
+    padding: 30px 30px;
+    line-height: 18px;
+    -webkit-transform: scale(1, 1.3);
+    -ms-transform: scale(1, 1.3);
+    transform: scale(1, 1.4); }
+  .form-orange-text p {
+    padding: 30px 0px;
+    line-height: 19px;
+    font-size: 4.8vw; }
+  .form-zag {
+    font-size: 4.9vw; }
+  .form-h2 {
+    font-size: 23px;
+    padding: 10px 34px; }
+  .input-form {
+    margin-top: 0px; }
+    .input-form p {
+      color: #8e0001;
+      font-size: 12px;
+      text-align: left;
+      display: inline-block;
+      padding-left: 0px;
+      vertical-align: middle;
+      font-weight: normal;
+      letter-spacing: 0px;
+      -webkit-transform: scale(1, 2.3);
+      -ms-transform: scale(1, 2.3);
+      transform: scale(1, 2.3); }
+  .input-form input[type=text] {
+    min-width: 70%;
+    margin-bottom: 20px;
+    padding-top: 0;
+    height: 40px; }
+  .button-red {
+    width: inherit;
+    font-size: 9.5vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: inherit;
+    margin: 5px auto;
+    -webkit-box-shadow: none;
+    box-shadow: none; }
+  .grab-head-green.grab-head-green-height h1 {
+    line-height: 22px;
+    font-size: 6vw;
+    padding: 70px 10px;
+    letter-spacing: 0; }
+  .slide-face img {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 10px; }
+  .slide-face p {
+    font-size: 3.2vw;
+    display: inline-block;
+    text-align: justify;
+    padding: 0;
+    line-height: 15px; }
+  .slide-face h3 {
+    padding: 0;
+    font-size: 14px; }
+  .grab-footer-logo p {
+    line-height: 15px;
+    font-size: 3.8vw; }
+  .grab-footer-logo .visible-footer {
+    display: none; }
+  .grab-footer-logo .visible-footer1 {
+    display: block;
+    width: 123px;
+    height: 104px; } }
+
+@media only screen and (max-width: 432px) {
+  .form-shield {
+    width: 100%; } }
+
+@media only screen and (max-width: 320px) {
+  .head-grab-green h1 {
+    font-size: 3.8vw;
+    padding: 30px 30px;
+    line-height: 18px;
+    -webkit-transform: scale(1, 1.3);
+    -ms-transform: scale(1, 1.3);
+    transform: scale(1, 1.4); }
+  .form-orange-text {
+    max-width: 300px; }
+    .form-orange-text p {
+      padding: 30px 0px;
+      line-height: 19px;
+      font-size: 5vw; }
+  .form-green-text {
+    display: block;
+    margin: 0 10px; }
+  .form-zag {
+    font-size: 4.9vw; }
+  .form-h2 {
+    font-size: 23px;
+    padding: 10px 34px; }
+  .input-form {
+    margin-top: 0px; }
+    .input-form p {
+      color: #8e0001;
+      font-size: 10px;
+      text-align: left;
+      display: inline-block;
+      padding-left: 0px;
+      vertical-align: middle;
+      font-weight: normal;
+      letter-spacing: 0px;
+      -webkit-transform: scale(1, 2.3);
+      -ms-transform: scale(1, 2.3);
+      transform: scale(1, 2.3); }
+  .input-form .checkbox-p div {
+    margin-left: 0; }
+  .input-form input[type=text] {
+    min-width: auto;
+    margin-bottom: 10px;
+    padding-top: 0;
+    max-height: 30px; }
+  .button-red {
+    width: inherit;
+    font-size: 31px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: inherit;
+    margin: 5px 20px;
+    -webkit-box-shadow: none;
+    box-shadow: none; }
+  .grab-head-green.grab-head-green-height h1 {
+    line-height: 22px;
+    font-size: 6vw;
+    padding: 70px 10px;
+    letter-spacing: 0; }
+  .slide-face img {
+    width: 100%;
+    padding: 0; }
+  .slide-face p {
+    font-size: 3.2vw;
+    display: inline-block;
+    text-align: justify;
+    padding: 0;
+    line-height: 15px; }
+  .slide-face h3 {
+    padding: 0;
+    font-size: 14px; }
+  .grab-footer-logo p {
+    line-height: 15px;
+    font-size: 3.8vw; }
+  .grab-footer-logo .visible-footer {
+    display: none; }
+  .grab-footer-logo .visible-footer1 {
+    display: block;
+    width: 123px;
+    height: 104px; } }
