@@ -34,6 +34,9 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 1100px) {
+  .belive__content{
+    padding: 0 10px;
+  }
   .header-overall h2{
     font-size: 33px;
   }
@@ -51,12 +54,7 @@
   .remember__item__h h2{
     font-size: 33px;
   }
-  .belive__content_right{
-    padding-right: 35px;
-  }
-  .belive__content_left{
-    padding-left: 35px;
-  }
+
   .remember__item_padding{
     margin-left: 30px;
   }
@@ -72,14 +70,10 @@
 }
 @media only screen and (max-width : 887px) {
   .header-flag h1 {
-    padding: 39px 0px;
-  }
-  .remember__item{
-    float: none;
-    display: block;
+    padding: 39px 10px;
   }
   .get{
-    background: url("../img/raster/bg-man-small.png");
+    @include linear-gradient(to right, #c0d0e6 0%,#f3f6fd 50%,#c0d0e6 100%);
     height: auto;
     p{
       font-size: 20px;
@@ -96,7 +90,10 @@
   }
   .remember__item{
     margin: 0 auto;
-    width: 90%;
+    width: 100%;
+    float: none;
+    display: block;
+    max-width: 832px;
   }
   .remember__item__content{
     width: 100%;
@@ -107,28 +104,40 @@
   .remember__item__free{
     margin: 0 auto;
     min-height: 135px;
-    min-width: 415px;
+    min-width: 413px;
     position: relative;
     padding: 0;
     h2{
-      font-size: 52px;
+      font-size: 62.5px;
       text-align: center;
       padding-top: 36px;
+      text-shadow: none;
+      line-height: 90px;
     }
     &:after{
       border: 208px solid transparent;
       border-top: 51px solid #00672f;
+      border-bottom: 51px solid transparent;
       position: absolute;
       right: auto;
       left: 50%;
       margin-left: -209px;
-      bottom: -259px;
+      bottom: -102px;
     }
   }
   .remember__item__btn{
     margin-top: 110px;
     background-image: url(../img/raster/btn-red-mobile.jpg);
-    min-height: 140px;
+    width: 100%;
+    max-width: 752px;
+    font-size: 90.26px;
+    line-height: 68px;
+    span{
+      font-size: 59.03px;
+    }
+  }
+  .remember__item_order{
+    min-height: 223px;
   }
   .remember__item__h{
     width: 100%;
@@ -160,19 +169,61 @@
     background-position: center top;
     height: auto;
   }
-  .header-overall:after {
-    width: 100%;
+  .header-overall{
+    padding-top: 168px;
+    &:after {
+      display: none;
+    }
+    h2{
+      background-color: #ff9500;
+      padding: 47px 0 35px 0;
+      font-size: 41.67px;
+      text-shadow: 0 0 2px #00612b;
+    }
   }
-  .belive__content_img-block{
+
+
+  .belive-padding{
+    margin-top: 55px;
+
+  }
+  .belive__content > div{
+    margin-bottom: 75px;
+  }
+  .belive__content .belive__content_img{
+    float: none;
+    display: block;
+    text-align: center;
+    margin-bottom: 45px;
+  }
+  .belive__content_text{
+    text-shadow: 0 0 11px #fff;
+    text-align: center;
     display: block;
   }
-  .belive__content_left {
-    padding: 0;
-    text-align: center;
+
+  .personal__header{
+    padding-top: 0;
   }
-  .belive__content_right {
-    padding: 0;
-    text-align: center;
+  .personal__content-left{
+    padding-top: 0;
+    padding-bottom: 0;
+    img{
+      width: 100%;
+    }
+  }
+  .personal__content-right{
+    display: block;
+    text-align: justify;
+    padding: 0 34px;
+    p{
+      font-size: 38.4px;
+      &:not(:first-child){
+        br{
+          display: none;
+        }
+      }
+    }
   }
 }
 
@@ -184,6 +235,12 @@
 @media only screen and (max-width : 768px) {
   .remember__item_padding {
     width: 80%;
+  }
+  .header-overall{
+    h2{
+      padding-left: 10px;
+      padding-right: 10px;
+    }
   }
 }
 @media only screen and (max-width : 550px) {
@@ -225,9 +282,10 @@
     font-size: 38px;
   }
   .remember__item__btn{
-    font-size: 35px;
+    font-size: 60px;
+    width: 90%;
     span{
-      font-size: 27px;
+      font-size: 37px;
     }
   }
   .remember__item__btn {

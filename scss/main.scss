@@ -138,15 +138,28 @@ body textarea:required:valid{
     position: absolute;
   }
 }
+.belive__content{
+  padding: 0 134px;
+}
 .belive__content_left{
   text-align: left;
   width: 100%;
-  padding-left: 135px;
-  padding-bottom: 26px;
+  padding-bottom: 15px;
 }
 .belive__content_right{
   text-align: right;
-  padding-right: 132px;
+  padding-bottom: 17px;
+  &:after{
+    content: "";
+    clear: both;
+    display: block;
+  }
+  .belive__content_img{
+    float: right;
+  }
+  .belive__content_text{
+    margin-top: 20px;
+  }
 }
 .belive-padding{
   margin-top: 106px;
@@ -182,6 +195,7 @@ body textarea:required:valid{
   display: inline-block;
   p{
     color: #2e3192;
+    margin-bottom: 27px;
   }
 }
 .personal__content-left{
