@@ -23,12 +23,25 @@
   .think__content-overall{
     margin: 0 auto;
   }
+  .step__text_padding5{
+    padding-top: 80px;
+  }
+  .steps {
+    background-position: -9px 0px;
+  }
+  .calculator__content__block h3 {
+    font-size: 26px;
+  }
 }
+
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 1100px) {
   .header-overall h2{
     font-size: 33px;
+  }
+  .steps {
+    background-position: -100px 0px;
   }
 }
 @media only screen and (max-width : 992px) {
@@ -55,6 +68,12 @@
   }
   h2{
     font-size: 36px;
+  }
+  .steps {
+    background-position: -145px 0px;
+  }
+  .calculator__button{
+    margin-left: -31px;
   }
 }
 
