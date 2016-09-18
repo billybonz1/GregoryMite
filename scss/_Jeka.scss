@@ -1,4 +1,5 @@
 @import "../libs/lightslider/dist/css/lightslider.min.css";
+@import "../libs/magnific-popup/dist/magnific-popup.css";
 ///-Верх с формой///
 
 .head-grab{
@@ -130,7 +131,6 @@
   min-width: 175px;
   min-height: 30px;
   text-align: right;
-  font-family: "Myriad Pro";
   color: #007236;
   font-size: 24px;
   padding-right: 3px;
@@ -314,5 +314,101 @@
 }
 .grab-footer-logo .visible-footer1{
   display: none;
+}
+.popup-window{
+  max-width: 640px;
+  min-height: 223px;
+  border: 1px solid #fff;
+  background:linear-gradient(to top,#f78a0c,#fec787);
+  margin: 0 auto;
+  p{
+    padding: 0 21px;
+    padding-top: 38px;
+  }
+  *{
+    color: #007235;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    display:block;
+    line-height: 25px;
+
+  }
+  *:first-child{
+    padding-top: 50px;
+  }
+  *:nth-child(2){
+    padding-top: 12px;
+  }
+}
+.mfp-close{
+  right: 26%;
+  top: 5px;
+}
+.mfp-close-btn-in .mfp-close{
+  color:#007235 ;
+  background: #f78806;
+  border-radius: 20px;
+}
+.button.mfp-close, button.mfp-arrow{
+
+}
+
+/////////////online test/////
+.instruction .online-instruction{
+  border: 2px solid #fff;
+  max-width: 668px;
+  margin: 0 auto;
+  margin-bottom: 13px;
+
+  p{
+    padding-top: 19px;
+    padding-left: 33px;
+    padding-bottom: 18px;
+    display: inline-block;
+    margin-bottom: 0;
+  }
+  span{
+    border: 2px solid #fff;
+    padding: 10px 50px;
+    margin-top: 5px;
+    margin-right: 7px;
+    color: #fff;
+    font-size: 24px;
+  }
+}
+.online-scale{
+  text-align: center;
+  margin: 110px auto;
+  h1{
+    color: #007236;
+    line-height: 25px;
+    text-shadow: none;
+  }
+}
+.instruction.instruction-orange{
+  background: rgb(248, 148, 29);
+  border: none;
+  padding: 13px 18px 20px;
+}
+.row-online{
+  *{
+    color: #007236;
+    font-size: 24px;
+  }
+  *[class^=col]{
+    margin: 0 ;
+    padding: 2.5px 5px;
+  }
+  div[class=green-online]{
+    border: 2px solid #007236;
+    text-align: center;
+  }
+  div[class=green-online1]{
+    border: 2px solid #007236;
+    text-align: left;
+    padding-left: 89px;
+
+  }
 }
 @import "JekaMedia";

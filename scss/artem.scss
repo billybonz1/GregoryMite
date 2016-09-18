@@ -34,6 +34,7 @@
   margin: 57px 48px 0;
   border: 1px solid #fff;
   padding: 0 64px 20px;
+  position: relative;
   h2{
     font-size: 24px;
     color: #f8941d;
@@ -144,4 +145,80 @@
   height: 105px;
   margin: 51px 0;
   box-shadow: 5px 14px 0px 0px rgba(0, 0, 0, 0.1);
+}
+/////////media//////////
+@media only screen and (max-width : 1212px){
+  .header-flag_test {
+    h1{
+      font-size: 2.5vw;
+    }
+  }
+}
+@media only screen and (max-width : 855px){
+  .header-flag_test{
+    overflow: inherit;
+    h1{
+      display: block;
+      float: none !important;
+      margin: 0;
+      line-height: 25px;
+      padding-top: 5px;
+      padding-bottom: 15px;
+      font-size: 3vw;
+    }
+  }
+  .header-flag{
+    height: auto;
+  }
+  .header-flag_test .logo{
+    display: block;
+    float: none !important;
+  }
+  .mobile_fail{
+    position: absolute;
+    bottom: -107px;
+    p{
+      color: #006633;
+    }
+  }
+  .cost-header{
+    width: 95%;
+  }
+  .test-header{
+    margin: 110px auto 75px;
+  }
+  .tests{
+    padding-left: 25px;
+  }
+  .test__a {
+    span{
+      font-size: 3vw;
+    }
+  }
+  .test__q{
+    padding-left: 0px;
+  }
+  .check-level-btn{
+    font-size: 35px;
+  }
+  .remember__item__btn{
+    width: 80%;
+  }
+}
+@media only screen and (max-width : 460px){
+  .test__a span:before{
+    margin-right: 10px;
+  }
+
+  .test__a {
+    span{
+      font-size: 4vw;
+    }
+  }
+}
+
+@media only screen and (max-width : 444px){
+  .check-level-btn{
+    font-size: 23px;
+  }
 }

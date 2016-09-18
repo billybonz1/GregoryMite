@@ -1,4 +1,5 @@
 @import url(../libs/lightslider/dist/css/lightslider.min.css);
+@import url(../libs/magnific-popup/dist/magnific-popup.css);
 *::-webkit-input-placeholder {
   color: #666;
   opacity: 1; }
@@ -947,7 +948,6 @@ p {
   min-width: 175px;
   min-height: 30px;
   text-align: right;
-  font-family: "Myriad Pro";
   color: #007236;
   font-size: 24px;
   padding-right: 3px;
@@ -1114,6 +1114,88 @@ p {
 .grab-footer-logo .visible-footer1 {
   display: none; }
 
+.popup-window {
+  max-width: 640px;
+  min-height: 223px;
+  border: 1px solid #fff;
+  background: -webkit-gradient(linear, left bottom, left top, from(#f78a0c), to(#fec787));
+  background: -webkit-linear-gradient(bottom, #f78a0c, #fec787);
+  background: linear-gradient(to top, #f78a0c, #fec787);
+  margin: 0 auto; }
+  .popup-window p {
+    padding: 0 21px;
+    padding-top: 38px; }
+  .popup-window * {
+    color: #007235;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    display: block;
+    line-height: 25px; }
+  .popup-window *:first-child {
+    padding-top: 50px; }
+  .popup-window *:nth-child(2) {
+    padding-top: 12px; }
+
+.mfp-close {
+  right: 26%;
+  top: 5px; }
+
+.mfp-close-btn-in .mfp-close {
+  color: #007235;
+  background: #f78806;
+  -webkit-border-radius: 20px;
+  border-radius: 20px; }
+
+.instruction .online-instruction {
+  border: 2px solid #fff;
+  max-width: 668px;
+  margin: 0 auto;
+  margin-bottom: 13px; }
+  .instruction .online-instruction p {
+    padding-top: 19px;
+    padding-left: 33px;
+    padding-bottom: 18px;
+    display: inline-block;
+    margin-bottom: 0; }
+  .instruction .online-instruction span {
+    border: 2px solid #fff;
+    padding: 10px 50px;
+    margin-top: 5px;
+    margin-right: 7px;
+    color: #fff;
+    font-size: 24px; }
+
+.online-scale {
+  text-align: center;
+  margin: 110px auto; }
+  .online-scale h1 {
+    color: #007236;
+    line-height: 25px;
+    text-shadow: none; }
+
+.instruction.instruction-orange {
+  background: #f8941d;
+  border: none;
+  padding: 13px 18px 20px; }
+
+.row-online * {
+  color: #007236;
+  font-size: 24px; }
+
+.row-online *[class^=col] {
+  margin: 0;
+  padding: 2.5px 5px; }
+
+.row-online div[class=green-online] {
+  border: 2px solid #007236;
+  text-align: center; }
+
+.row-online div[class=green-online1] {
+  border: 2px solid #007236;
+  text-align: left;
+  padding-left: 89px; }
+
 /* medium Devices, Wide Screens */
 @media only screen and (max-width: 1212px) {
   .top-grab p {
@@ -1269,11 +1351,19 @@ p {
   .form-orange-text p {
     padding: 30px 0px;
     line-height: 19px;
-    font-size: 4.8vw; }
+    font-size: 4.6vw; }
   .form-zag {
     font-size: 4.9vw; }
+  .form-shield * {
+    -webkit-transform: scale(0.89);
+    -ms-transform: scale(0.89);
+    transform: scale(0.89); }
+  .form-shield input[type=text] {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1); }
   .form-h2 {
-    font-size: 23px;
+    font-size: 5.8vw;
     padding: 10px 34px; }
   .input-form {
     margin-top: 0px; }
@@ -1291,7 +1381,6 @@ p {
       transform: scale(1, 2.3); }
   .input-form input[type=text] {
     min-width: 70%;
-    margin-bottom: 20px;
     padding-top: 0;
     height: 40px; }
   .button-red {
@@ -1413,3 +1502,58 @@ p {
     display: block;
     width: 123px;
     height: 104px; } }
+
+@media only screen and (max-width: 807px) {
+  .row-online div[class=green-online1] {
+    padding-left: 10px; } }
+
+@media only screen and (max-width: 735px) {
+  .cost-header__border {
+    margin: 0 25px; }
+  .test-header .cost-header__border_size h2 {
+    font-size: 35px; }
+  .instruction .online-instruction * {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1); }
+  .instruction .online-instruction p {
+    font-size: 3vw; }
+  .instruction .online-instruction span {
+    font-size: 2.3vw;
+    padding: 10px 25px;
+    margin-top: 10px; } }
+
+@media only screen and (max-width: 702px) {
+  .row-online * {
+    font-size: 16px; } }
+
+@media only screen and (max-width: 628px) {
+  .instruction.instruction-size-test {
+    padding: 0 20px 20px;
+    margin: 0; }
+    .instruction.instruction-size-test p {
+      font-size: 19px; }
+  .instruction.instruction-size {
+    padding: 0 20px 20px; }
+  .instruction .online-instruction p {
+    display: block;
+    text-align: center;
+    padding-left: 0;
+    font-size: 3.4vw; }
+  .instruction .online-instruction span {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 4vw; }
+  .pull-right {
+    float: none !important; } }
+
+@media only screen and (max-width: 522px) {
+  .row-online * {
+    font-size: 12px; } }
+
+@media only screen and (max-width: 433px) {
+  .instruction.instruction-orange {
+    margin: 57px 10px 0; } }
