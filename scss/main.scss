@@ -58,7 +58,7 @@ body textarea:required:valid{
 }
 .remember{
   background-image: url("../img/raster/bg-grey.png");
-  height: 285px;
+  min-height: 285px;
   p{
     color: white;
     padding-top: 32px;
@@ -94,10 +94,13 @@ body textarea:required:valid{
 }
 .remember__item__btn{
   background-image: url("../img/raster/btn-red.png");
+  background-size: cover;
   width: 74%;
   height: 54%;
   border: none;
-  margin-left: 64px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 20px;
   font-size: 43px;
   color: white;
@@ -187,9 +190,9 @@ body textarea:required:valid{
   display: inline-block;
 }
 .think-header{
-  padding-top: 67px;
   h2{
     color: #ff9500;
+    padding: 68px 0;
   }
 }
 .think__content{
@@ -292,7 +295,7 @@ body textarea:required:valid{
 .main-header{
   h2{
     color: #ff9500;
-    padding-top: 45px;
+    padding: 45px 0;
     line-height: 49px;
     letter-spacing: 1.4px;
   }
@@ -301,11 +304,106 @@ body textarea:required:valid{
   background-image: url("../img/raster/skype-bg.png");
   width: 100%;
   height: 2356px;
+  overflow: hidden;
+  position: relative;
 }
-.clip{
-  background-image: url("../img/raster/clip.png");
-  width: 16px;
-  height: 13px;
+.main__content__item1{
+  padding-left: 118px;
+  padding-top: 155px;
+  position: relative;
+  h3{
+    padding-bottom: 28px;
+    &:after{
+      content: '';
+      position: absolute;
+      background-color: #f8941d;
+      width: 70.5%;
+      height: 3.8%;
+      top: 160px;
+      left: -39%;
+    }
+  }
+}
+.main__content__item{
+  h3{
+    letter-spacing: 1.1px;
+  }
+  p{
+    line-height: 30px;
+  }
+}
+.main__content__item1__block{
+  padding-top: 59px;
+}
+.main__content__item1__block__list{
+  p{
+    background-image: url(../img/raster/clip.png);
+    background-repeat: no-repeat;
+    background-position: 0 10px;
+    padding-left: 36px;
+  }
+}
+.main__content__item2{
+  text-align: right;
+  padding-top: 219px;
+  padding-right: 138px;
+  position: relative;
+  min-height: 1083px;
+  h3{
+    padding-bottom: 28px;
+    letter-spacing: 0.8px;
+    &:after{
+      content: '';
+      position: absolute;
+      background-color: #f8941d;
+      width: 23.4%;
+      height: 2.5%;
+      top: 226px;
+      right: 409px;
+    }
+  }
+  p{
+    padding-right: 7px;
+  }
+}
+.main__content__item2__block{
+  padding-top: 60px;
+  margin-left: 74px;
+  float: right;
+  p{
+    text-align: left;
+  }
+}
+.main__content__skype1{
+  position: absolute;
+  top: 219px;
+  right: 85px;
+}
+.main__content__skype2{
+  position: absolute;
+  top: 567px;
+  left: 110px;
+}
+.personal__skype{
+  p{
+    position: relative;
+    line-height: 25px;
+    padding-left: 146px;
+    padding-top: 7px;
+    &:after{
+      content: '';
+      position: absolute;
+      background-color: #f8941d;
+      width: 50.7%;
+      height: 118.9%;
+      top: 0;
+      left: 0;
+    }
+  }
+}
+.background-after{
+  z-index: 2;
+  position: relative;
 }
 .orange-background{
   background-color: #f8941d;

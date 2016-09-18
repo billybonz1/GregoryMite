@@ -17,9 +17,6 @@
   .personal__content{
     text-align: center;
   }
-  p{
-    font-size: 15px;
-  }
   .think__content-overall{
     margin: 0 auto;
   }
@@ -51,9 +48,6 @@
   .remember__item__free{
     padding-left: 14px;
   }
-  .remember__item__btn{
-    margin-left: 45px;
-  }
   .remember__item__h h2{
     font-size: 33px;
   }
@@ -76,13 +70,167 @@
     margin-left: -31px;
   }
 }
+@media only screen and (max-width : 887px) {
+  .header-flag h1 {
+    padding: 39px 0px;
+  }
+  .remember__item{
+    float: none;
+    display: block;
+  }
+  .get{
+    background: url("../img/raster/bg-man-small.png");
+    height: auto;
+    p{
+      font-size: 20px;
+    }
+    .p-bold{
+      font-size: 25px;
+    }
+  }
+  .get__item-left {
+    width: 45px;
+  }
+  .get h3 {
+    padding-left: 10px;
+  }
+  .remember__item{
+    margin: 0 auto;
+    width: 90%;
+  }
+  .remember__item__content{
+    width: 100%;
+    height: auto;
+    padding: 0;
+    padding-bottom: 35px;
+  }
+  .remember__item__free{
+    margin: 0 auto;
+    min-height: 135px;
+    min-width: 415px;
+    position: relative;
+    padding: 0;
+    h2{
+      font-size: 52px;
+      text-align: center;
+      padding-top: 36px;
+    }
+    &:after{
+      border: 208px solid transparent;
+      border-top: 51px solid #00672f;
+      position: absolute;
+      right: auto;
+      left: 50%;
+      margin-left: -209px;
+      bottom: -259px;
+    }
+  }
+  .remember__item__btn{
+    margin-top: 110px;
+    background-image: url(../img/raster/btn-red-mobile.jpg);
+    min-height: 140px;
+  }
+  .remember__item__h{
+    width: 100%;
+    border-top: 3px solid #063;
+    border-bottom: 3px solid #063;
+  }
+  .remember__item_padding{
+    padding-top: 55px;
+    text-align: center;
+    width: 60%;
+  }
+  .remember__item__h h2 {
+    font-size: 50px;
+  }
+  .remember{
+    padding-bottom: 45px;
+    p{
+      font-size: 30px;
+    }
+  }
+  .remember__item__h h2 {
+    font-size: 32px;
+  }
+  .remember p {
+    font-size: 25px;
+  }
+  .belive{
+    background-size: cover;
+    background-position: center top;
+    height: auto;
+  }
+  .header-overall:after {
+    width: 100%;
+  }
+  .belive__content_img-block{
+    display: block;
+  }
+  .belive__content_left {
+    padding: 0;
+    text-align: center;
+  }
+  .belive__content_right {
+    padding: 0;
+    text-align: center;
+  }
+}
+
+
+
+
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
-
+  .remember__item_padding {
+    width: 80%;
+  }
+}
+@media only screen and (max-width : 550px) {
+  .get .p-bold {
+    font-size: 30px;
+  }
+  .get{
+    h3{
+      font-size: 25px;
+    }
+    br{
+      display: none;
+    }
+  }
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-
+  .header-flag h1 {
+    font-size: 22px;
+  }
+  .get .p-bold {
+    font-size: 27px;
+  }
+  .get h3 {
+    font-size: 28px;
+  }
+  .remember__item__free {
+    min-width: 225px;
+  }
+  .remember__item__free:after {
+    border: 114px solid transparent;
+    border-top: 30px solid #00672f;
+    left: 50%;
+    margin-left: -113px;
+    bottom: -144px;
+  }
+  .remember__item__free h2 {
+    font-size: 38px;
+  }
+  .remember__item__btn{
+    font-size: 35px;
+    span{
+      font-size: 27px;
+    }
+  }
+  .remember__item__btn {
+    margin-top: 68px;
+  }
 }
